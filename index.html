@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="style.css">
+  <title>Tap N' Snatch</title>
+</head>
+<body>
+
+<!-- Login/Sign Up Screen -->
+<div class="auth-screen container" id="auth-screen">
+  <img src="logo.png" alt="Logo" class="logo" />
+  <h1 id="form-title">TAP ‘N SNATCH</h1>
+  <p id="form-subtext">Sign in to continue.</p>
+
+  <form id="auth-form">
+    <label for="name">NAME</label>
+    <input type="text" id="name" placeholder="Jiara Martins" required />
+
+    <div id="email-field" style="display: none;">
+      <label for="email">EMAIL</label>
+      <input type="email" id="email" placeholder="hello@reallygreatsite.com" />
+    </div>
+
+    <label for="password">PASSWORD</label>
+    <input type="password" id="password" placeholder="••••••" required />
+
+    <button type="submit" id="submit-btn">Log in</button>
+  </form>
+
+  <div class="toggle" id="toggle-form">Create an Account</div>
+  <div class="footer-shape"></div>
+</div>
+
+
+<!-- ABOUT THIS APP -->
+
+<div class="about-container" id="about-container">
+  <div class="logo-section">
+    <img src="logo.png" alt="Tap N Snatch Logo" class="logo">
+  </div>
+
+  <h1 class="app-title">TAP ‘N<br>SNATCH</h1>
+  <h2 class="about-heading">About the app</h2>
+
+  <div class="about-text">
+    <strong>About use:</strong><br>
+    <p>
+      This app allows the store manager to check security footages, transaction history, inventory,
+      customer count, product price, and store overview all in one go.
+    </p>
+    <p>
+      This ensures that the manager can easily track what should be tracked on their store face-to-face
+      from any part of the world.
+    </p>
+  </div>
+
+  <button class="continue-btn" id="continue-btn1">Continue</button>
+</div>
+
+<!-- SECURITY SET UP -->
+<div class="security-container" id="security-container">
+  <div class="logo-section">
+    <img src="logo.png" alt="Tap N Snatch Logo" class="logo">
+  </div>
+
+  <h1 class="app-title">TAP ‘N<br>SNATCH</h1>
+
+  <h2 class="main-heading">Set-up Security</h2>
+
+  <p class="subtext">
+    First, let’s ensure that the store safety and the store along with the products are safe are all at top priority
+  </p>
+
+  <p class="bold-link">Set up Security Camera Connection</p>
+
+  <button class="continue-btn" id="continue-btn2">Continue</button>
+</div>
+
+<!-- FINISHED SETUP -->
+
+<div class="setup-complete-container" id="setup-complete-container">
+  <img src="logo.png" alt="Tap N' Snatch Logo" class="logo" />
+
+  <h1 class="brand-title">TAP ‘N<br>SNATCH</h1>
+
+  <h2 class="main-message">You’re all<br>set.</h2>
+
+  <button class="continue-btn" id="continue-btn3">Continue</button>
+
+  <div class="footer-graphic"></div>
+</div>
+
+<!-- Dashboard Screen -->
+<div class="dashboard-screen" id="dashboard">
+  <div class="dashboard-container">
+    <h2>Convenience Store</h2>
+
+    <div class="card">
+      <h3>Store Info ➤</h3>
+      <small>Store Manager</small>
+      <div class="gender">♂ Male</div>
+      <button class="plus-btn" id="plus-btn">+</button>
+    </div>
+
+    <div class="icons">
+        <div class="icon-group" id="security-footage">
+          <div class="icon-circle">
+            <img src="security.png" alt="Security" />
+          </div>
+          <span>Security Footage</span>
+        </div>
+        <div class="icon-group" id="transaction-history">
+          <div class="icon-circle">
+            <img src="1.png" alt="Transaction" />
+          </div>
+          <span>Transaction History</span>
+        </div>
+        <div class="icon-group" id="inventory-icon">
+          <div class="icon-circle">
+            <img src="2.png" alt="Inventory" />
+          </div>
+          <span>Inventory</span>
+        </div>
+        <div class="icon-group" id="customer-count-btn">
+          <div class="icon-circle">
+            <img src="3.png" alt="Customer Count" />
+          </div>
+          <span>Customer Count</span>
+        </div>
+        <div class="icon-group" id="price-section">
+          <div class="icon-circle">
+            <img src="4.png" alt="Product Price" />
+          </div>
+          <span>Product Price</span>
+        </div>
+      </div>
+      
+
+    <div class="section-title">Recent Updates</div>
+    <div class="updates-box"></div>
+  </div>
+
+  <footer class="navbar">
+    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" class="active" alt="Home">
+    <img src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="Chat">
+    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Profile">
+  </footer>
+</div>
+
+<!-- INVENTORY SECTION -->
+<div class="phone" id="inventory-screen">
+  <div class="header">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h2>INVENTORY</h2>
+  </div>
+  
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search burger, beverage, etc.">
+    <div class="categories">
+      <button>Drinks</button>
+      <button>Coffee</button>
+      <button>Snack</button>
+      <button>Package</button>
+    </div>
+  </div>
+
+  <div class="inventory" id="inventory-list">
+    <div class="item">
+      <img src="geto.png" alt="Classic Burger">
+      <div class="item-details">
+        <h3>Getorade</h3>
+        <div class="stock">Qty: 3</div>
+      </div>
+      <div class="item-price">₱30</div>
+    </div>
+
+    <div class="item">
+      <img src="coca.png" alt="Beef Cheese Burger">
+      <div class="item-details">
+        <h3>Coca-cola</h3>
+        <div class="stock">Qty: 2</div>
+      </div>
+      <div class="item-price">₱15</div>
+    </div>
+
+    <div class="item">
+      <img src="royal.png" alt="Bacon BBQ Burger">
+      <div class="item-details">
+        <h3>Royal</h3>
+        <div class="stock">Qty: 1</div>
+      </div>
+      <div class="item-price">₱15.0</div>
+    </div>
+
+    <div class="item">
+      <img src="sprite.png" alt="Double Stack Burger">
+      <div class="item-details">
+        <h3>Sprite</h3>
+        <div class="out-of-stock">out of stock</div>
+      </div>
+      <div class="item-price">₱17.0</div>
+    </div>
+
+    <div class="item">
+      <img src="c2.png" alt="Fish Fillet Burger">
+      <div class="item-details">
+        <h3>C2</h3>
+        <div class="stock">Qty: 3</div>
+      </div>
+      <div class="item-price">₱20</div>
+    </div>
+  </div>
+
+  <footer class="navbar">
+    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" class="active" alt="Home" id="home1">
+    <img src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="Chat">
+    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Profile">
+  </footer>
+</div>
+
+<!-- TRANSACTION HISTORY -->
+
+<div class="transaction-history-container" id="transaction-container">
+
+  <div class="header">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h2>TRANSACTION<br>HISTORY</h2>
+  </div>
+
+  <div class="balance-card">
+    <div class="balance-info">
+      <p>Total Balance</p>
+      <h1>₱149.868</h1>
+      <div class="balance-change">+49.89%</div>
+    </div>
+    <div class="calendar-icon">
+      📅
+    </div>
+  </div>
+
+  <div class="sort-bar">
+    <span>Short by</span>
+    <span class="time-range">Last 24h ▼</span>
+  </div>
+
+  <div class="transaction-list">
+    <div class="transaction-item purple">
+      <div class="icon">💲</div>
+      <div class="transaction-info">
+        <p class="email">yosh@gmail.com</p>
+        <p class="amount-small">$8.89</p>
+      </div>
+      <div class="amount">
+        ₱89.759
+        <div class="percent green">+4.89%</div>
+      </div>
+    </div>
+
+    <div class="transaction-item red">
+      <div class="icon">💲</div>
+      <div class="transaction-info">
+        <p class="email">Namee</p>
+        <p class="amount-small">$5.85</p>
+      </div>
+      <div class="amount">
+        ₱54.724
+        <div class="percent green">+54.23%</div>
+      </div>
+    </div>
+
+    <div class="transaction-item gray">
+      <div class="icon">💲</div>
+      <div class="transaction-info">
+        <p class="email">Null</p>
+        <p class="amount-small">$2.65</p>
+      </div>
+      <div class="amount">
+        ₱5.385
+        <div class="percent red">-5.93%</div>
+      </div>
+    </div>
+  </div>
+  <footer class="navbar">
+    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" class="active" alt="Home" id="home2">
+    <img src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="Chat">
+    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Profile">
+  </footer>
+</div>
+
+<!-------------- CUSTOMER HISTORY ------------------>
+<div class="customer-history-container" id="customer-count">
+
+  <div class="header">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h2>CUSTOMER<br>HISTORY</h2>
+  </div>
+
+  <div class="date-section">
+    <span class="arrow">▼</span>
+    <span class="date">4/28/2025</span>
+  </div>
+
+  <div class="customer-list">
+    <div class="customer-card">
+      <div class="customer-header">
+        <div class="customer-name">1. 5/1/2025</div>
+        <div class="total green">TOTAL:<br> ₱89.759</div>
+      </div>
+      <ul class="items">
+        <li>getorade 1x</li>
+        <li>sprite 1x</li>
+        <li>coca-cola 1x</li>
+      </ul>
+    </div>
+
+    <div class="customer-card">
+      <div class="customer-header">
+        <div class="customer-name">2. 5/2/2025</div>
+        <div class="total green">TOTAL:<br> ₱100.10</div>
+      </div>
+      <ul class="items">
+        <li>royal 3x</li>
+        <li>c2 4x</li>
+        <li>getorade 2x</li>
+      </ul>
+    </div>
+
+    <div class="customer-card">
+      <div class="customer-header">
+        <div class="customer-name">3. 5/3/2025</div>
+        <div class="total green">TOTAL:<br> ₱120.90</div>
+      </div>
+      <ul class="items">
+        <li>getorade 3x</li>
+        <li>royal 6x</li>
+        <li>sprite 1x</li>
+      </ul>
+    </div>
+    <footer class="navbar">
+      <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" class="active" alt="Home" id="home3">
+      <img src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="Chat">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Profile">
+    </footer>
+  </div>
+
+</div>
+<!-- PRICE SECTION -->
+<div class="price-section" id="price-section-container">
+  <div class="header">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h2>INVENTORY</h2>
+  </div>
+  
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search burger, beverage, etc.">
+    <div class="categories">
+      <button>Drinks</button>
+      <button>Coffee</button>
+      <button>Snack</button>
+      <button>Package</button>
+    </div>
+  </div>
+
+  <div class="inventory" id="inventory-list">
+    <div class="item">
+      <img src="geto.png" alt="Classic Burger">
+      <div class="item-details">
+        <h3>Getorade</h3>
+        <div class="change-price">Change Price?</div>
+        <div class="stock">Qty: 3</div>
+      </div>
+      <div class="item-price">₱30</div>
+    </div>
+
+    <div class="item">
+      <img src="coca.png" alt="Beef Cheese Burger">
+      <div class="item-details">
+        <h3>Coca-cola</h3>
+        <div class="change-price">Change Price?</div>
+        <div class="stock">Qty: 2</div>
+      </div>
+      <div class="item-price">₱15</div>
+    </div>
+
+    <div class="item">
+      <img src="royal.png" alt="Bacon BBQ Burger">
+      <div class="item-details">
+        <h3>Royal</h3>
+        <div class="change-price">Change Price?</div>
+        <div class="stock">Qty: 1</div>
+      </div>
+      <div class="item-price">₱15.0</div>
+    </div>
+
+    <div class="item">
+      <img src="sprite.png" alt="Double Stack Burger">
+      <div class="item-details">
+        <h3>Sprite</h3>
+        <div class="change-price">Change Price?</div>
+        <div class="out-of-stock">out of stock</div>
+      </div>
+      <div class="item-price">₱17.0</div>
+    </div>
+
+    <div class="item">
+      <img src="c2.png" alt="Fish Fillet Burger">
+      <div class="item-details">
+        <h3>C2</h3>
+        <div class="change-price">Change Price?</div>
+        <div class="stock">Qty: 3</div>
+      </div>
+      <div class="item-price">₱20</div>
+    </div>
+  </div>
+
+  <footer class="navbar">
+    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" class="active" alt="Home" id="home4">
+    <img src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="Chat">
+    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Profile">
+  </footer>
+</div>
+
+<!-- SECURITY FOOTAGE -->
+
+<div class="security-container-btn" id="security-container-btn">
+  <header >
+    <img src="logo.png" alt="logo" class="logoo" />
+    <h1 class="sec">SECURITY CAMERA</h1>
+  </header>
+
+  <div class="camera-feed">
+    <img src="sec1.png" alt="Camera 1" />
+    <img src="sec2.jpg" alt="Camera 2" />
+    <img src="sec-3.jpg" alt="Camera 3" />
+  </div>
+
+  <footer class="navbar">
+    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" class="active" alt="Home" id="home5">
+    <img src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="Chat">
+    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Profile">
+  </footer>
+</div>
+
+<!------------------ ADD STORE ---------------->
+
+<div class="add-store-screen" id="add-store-screen">
+  <h2>Add new Store?</h2>
+  <div class="form-card">
+    <label for="store-name">NAME OF STORE</label>
+    <input type="text" id="store-name" placeholder="helloexample">
+
+    <label for="email">EMAIL</label>
+    <input type="email" id="email" placeholder="hello@reallygreatsite.com">
+
+    <label for="password">PASSWORD</label>
+    <input type="password" id="password" placeholder="******">
+
+    <label for="link-security">LINK TAP N'SNATCH (SECURITY, etc.)</label>
+    <input type="text" id="link-security" placeholder="storeexample12973">
+
+    <button class="add-btn" id="plus_home">ADD STORE</button>
+  </div>
+</div>
+
+<script>
+  const isLogin = { value: true };
+  const formTitle = document.getElementById('form-title');
+  const formSubtext = document.getElementById('form-subtext');
+  const toggleBtn = document.getElementById('toggle-form');
+  const emailField = document.getElementById('email-field');
+  const submitBtn = document.getElementById('submit-btn');
+  const authForm = document.getElementById('auth-form');
+  const authScreen = document.getElementById('auth-screen');
+  const dashboard = document.getElementById('dashboard');
+
+  const inventoryScreen = document.getElementById('inventory-screen');
+  const inventoryIcon = document.getElementById('inventory-icon');
+
+  const transaction_history = document.getElementById('transaction-container')
+  const transaction_btn = document.getElementById('transaction-history')
+
+  const customer_btn = document.getElementById('customer-count-btn')
+  const customer_history = document.getElementById('customer-count')
+
+  const home_inventory = document.getElementById('home1')
+  const home_transaction = document.getElementById('home2')
+  const home_customer_history = document.getElementById('home3')
+  const home_price = document.getElementById('home4')
+  const home_security = document.getElementById('home5')
+
+  const continue_btn1 = document.getElementById('continue-btn1')
+  const about_container = document.getElementById('about-container')
+  
+  const security_container = document.getElementById('security-container')
+  const continue_btn2 = document.getElementById('continue-btn2')
+
+  const setup_complete_container = document.getElementById('setup-complete-container')
+  const continue_btn3 = document.getElementById('continue-btn3')
+
+  const price_section = document.getElementById('price-section')
+  const price_section_container = document.getElementById('price-section-container')
+
+  const security = document.getElementById('security-footage')
+  const security_container2 = document.getElementById('security-container-btn')
+
+  const add_store_screen = document.getElementById('add-store-screen')
+  const plus_btn= document.getElementById('plus-btn')
+  const plus_home_btn = document.getElementById('plus_home')
+
+  const updatesBox = document.querySelector('.updates-box');
+
+  const list = document.createElement('ul');
+  list.style.paddingLeft = '1rem';
+  list.style.margin = '0';
+  updatesBox.appendChild(list);
+
+  const messages = [
+    "Camera 1 activated.",
+    "Inventory sync completed.",
+    "New transaction recorded.",
+    "Customer entered the store.",
+    "Security footage backed up.",
+    "Low stock warning for item: Chips."
+  ];
+
+  let index = 0;
+  const maxVisible = 4;
+
+  function showNextMessage() {
+    // Restart list if max is reached
+    if (index % maxVisible === 0) {
+      list.innerHTML = "";
+    }
+
+    const bullet = document.createElement('li');
+    bullet.textContent = messages[index];
+    list.appendChild(bullet);
+
+    index = (index + 1) % messages.length;
+  }
+
+  // Start the loop
+  showNextMessage();
+  setInterval(showNextMessage, 3000);
+
+
+  toggleBtn.addEventListener('click', () => {
+    isLogin.value = !isLogin.value;
+    formTitle.textContent = isLogin.value ? "TAP ‘N SNATCH" : "Create new Account";
+    formSubtext.textContent = isLogin.value ? "Sign in to continue." : "Already Registered? Log in here.";
+    emailField.style.display = isLogin.value ? 'none' : 'block';
+    submitBtn.textContent = isLogin.value ? 'Log in' : 'Sign up';
+    toggleBtn.textContent = isLogin.value ? 'Create an Account' : 'Back to Login';
+  });
+
+  authForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    authScreen.style.display = 'none';
+    about_container.style.display = 'block';
+  });
+
+  // NEW: Fix Inventory Button Click
+  inventoryIcon.addEventListener('click', () => {
+    dashboard.style.display = 'none';        // Hide dashboard
+    inventoryScreen.style.display = 'flex';  // Show inventory
+  });
+
+  transaction_btn.addEventListener('click', ()=>{
+    inventoryScreen.style.display = 'none';
+    dashboard.style.display = 'none';
+    transaction_history.style.display = 'block'
+  })
+
+  customer_btn.addEventListener('click', ()=>{
+    dashboard.style.display = 'none'; 
+    customer_history.style.display = 'block'
+  })
+
+  home_inventory.addEventListener('click', ()=>{
+    dashboard.style.display = 'block';
+    inventoryScreen.style.display = 'none';
+  })
+  home_transaction.addEventListener('click', ()=>{
+    dashboard.style.display = 'block';
+    transaction_history.style.display = 'none'
+  })
+  home_customer_history.addEventListener('click', ()=>{
+    dashboard.style.display = 'block';
+    customer_history.style.display = 'none'
+  })
+
+  continue_btn1.addEventListener('click', ()=>{
+    about_container.style.display = 'none';
+    security_container.style.display = 'block'
+  })
+  continue_btn2.addEventListener('click', ()=>{
+     security_container.style.display = 'none'
+     setup_complete_container.style.display = 'block'
+  })
+
+  continue_btn3.addEventListener('click', ()=>{
+    setup_complete_container.style.display = 'none'
+    dashboard.style.display = 'block';
+  })
+
+  price_section.addEventListener('click', ()=>{
+    dashboard.style.display = 'none';
+    price_section_container.style.display = 'block'
+  })
+
+  home_price.addEventListener('click', ()=>{
+    dashboard.style.display = 'block';
+    price_section_container.style.display = 'none'
+  })
+
+  security.addEventListener('click', ()=>{
+    security_container2.style.display ='block'
+    dashboard.style.display = 'none';
+  })
+
+  home_security.addEventListener('click', ()=>{
+    dashboard.style.display = 'block';
+    security_container2.style.display ='none'
+  })
+  
+  plus_home_btn.addEventListener('click', ()=>{
+    dashboard.style.display = 'block';
+    add_store_screen.style.display ='none'
+  })
+  
+  plus_btn.addEventListener('click', ()=>{
+    dashboard.style.display = 'none';
+    add_store_screen.style.display ='flex'
+  })
+  
+
+
+</script>
+
+</body>
+</html>
